@@ -1,0 +1,74 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+h1{ margin-top: 50px;}
+
+.dog{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 60px;
+    animation: dogMove 6s infinite;
+}
+
+
+.bone{
+    position: absolute;
+    left: 320px;
+    bottom: 10px;
+    font-size: 40px;
+    animation: boneMove 6s infinite;
+}
+
+
+@keyframes dogMove{
+    0%{ transform: translateX(0);}
+
+
+    35%{ transform: translateX(280px);}
+    
+
+    45%{ transform: translateX(280px);}
+
+
+    85%{ transform: translateX(0);}
+
+
+    100%{ transform: translateX(0);}
+}
+
+
+@keyframes boneMove{
+    0%{ opacity: 1;
+    transform: translateX(0);}
+
+
+    34%{ opacity: 1;
+    transform: translateX(0);}
+
+
+    36%{ opacity: 0;
+    transform: translateX(0);}
+
+
+    45%{ opacity: 0;
+    transform: translateX(0);}
+
+
+    46%{ opacity: 1;
+    transform: translateX(-280px);}
+
+
+    85%{ opacity: 1;
+    transform: translateX(-280px);}
+
+
+    86%{ opacity: 1;
+    transform: translateX(0);}
+
+
+    100%{ opacity: 1;
+    transform: translateX(0);}
+}
+    
